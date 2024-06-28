@@ -1,39 +1,26 @@
-# vite-template
+# FC24 VPro Utility Generator
 
 ## Features
-* Vite ⚡
-* ReactJS
-* TypeScript
-* Tailwindcss v3
-* Vercel
-* react-query
-* Vitest
-
-### To be supported later
-* Testing Library > React/Jest-dom
-* Eslint
-* Prettier
-* Storybook 
-
-## Getting started
-1. Create the project:
+이 프로젝트는 FC 24에서 선수커리어 모드 중 VPRO 선수에 대한 능력치와 playstyle, playstyle+을 수정할 수 있는, lua script를 생성합니다.
 ```
-npx degit kunbiya/vite-template#vite my-app
+This project creates a lua script in FC 24 that can modify stats and playstyle, playstyle+ for VPRO players in player career mode.
 ```
 
-2. Install the dependencies:
+페이지에서 선수에게 적용할 playstyle, playstyle+를 선택한 후 `Generate` 버튼을 클릭하면 lua script를 자동으로 생성합니다.
 ```
-npm install
-or
-pnpm install
+Select the playstyle, playstyle+ to apply to the player on the page and click the `Generate` button to automatically create the lua script.
 ```
 
-## Scripts
-- `npm run build` or `pnpm build` - build for production. The generated files will be on the `dist` folder.
-- `npm run dev` or `pnpm dev` - start a development server with hot reload.
-- `npm run preview` or `pnpm preview` - locally preview the production build.
-- `npm run test` or `pnpm test` - run unit and integration tests related to changed files based on git.
-- `npm run test:ci` or `pnpm test:ci` - run all unit and integration tests in CI mode.
+이 후, 생성 된 lua script를 사용하여 [FC-24-Live-Editor](https://github.com/xAranaktu/FC-24-Live-Editor)에 적용합니다.
+```
+After that, the generated lua script is used to apply to FC 24 Live Editor.
+```
 
-## License
-This project is licensed under the MIT License.
+
+### To be next update
+지금은 playstyle, playstyle+만 수정할 수 있습니다.
+선수 능력치 수정은 다음 업데이트에 적용 될 예정입니다.
+```
+For now, you can only modify playstyle, playstyle+.
+The modification of competency values will be applied to the next update.
+```
